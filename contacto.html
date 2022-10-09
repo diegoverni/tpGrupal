@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="STYLESHEET" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rambla&display=swap" rel="stylesheet">
+</head>
+<meta charset="UTF-8">
+<title>Finca Los Racimos</title>
+<link rel="icon" href="img/uvas.ico">
+</head>
+
+<header>
+    <h1> <span> FINCA </span> Los Racimos</h1>
+    <h2> San Rafael, Mendoza, Argentina</h2>
+    
+    <div class="container">
+    <nav>
+        <ul>
+        <li><a href="index.html">Nosotros</a></li>
+        <li><a href="cabanas.html">Cabañas</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="comollegar.html">Como Llegar</a></li>
+        </ul>      
+    </nav>
+    </div>
+</header>
+
+<body>
+<div class="container">
+    <p>Te estamos esperando</p>
+    <img src="img/751631297.jpg"> 
+</div>
+
+<form action="mailto:mail@gmail.com" method="post" enctype="text/plain"> 
+ Nombre y Apellido <input type="text" name="nombre" size="38" maxlength="100"> 
+ Email <input type="text" name="email" size="50" maxlength="100" value="@"> 
+ Teléfono <input type="text" name="Telefono" size="47" maxlength="60">  
+ Reserva
+ Desde <input type="date" name="fecha">   Hasta<input type="date" name="fecha">
+ 
+
+ <div class="container">
+    <p>Mascota</p>
+    <div class="mascota">
+      <input type="radio" id="mascotaChoice1" name="contact" value="email">
+      <label for="contactChoice1">Si</label>  
+      <input type="radio" id="mascotaChoice2" name="contact" value="phone">
+      <label for="contactChoice2">No</label>
+    </div>
+ </div>
+
+ <select name="Motivo">Motivo del viaje
+ <option value="1">Turismo
+ <option value="2">Trabajo
+ <option value="3">Otros
+ </select> 
+ Comentarios
+ <textarea name="comentarios"></textarea> 
+ <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación. 
+<input type="reset" value="Borrar" ><input type="submit" value="Enviar">
+</form>
+
+</body>
+
+<footer>
+    <p>® 2022 <span class="span_2">FINCA</span>Los Racimos | <span class="span_3">Todos los derechos reservados</span></p>
+    <section class="buttons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google-plus"></a>
+        <a href="#" class="fa fa-youtube"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+      </section>
+</footer>
+
+</html>
