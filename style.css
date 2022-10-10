@@ -351,22 +351,7 @@ button {
   }
 
 
-@media (max-width: 651px){
-  h1{background-color: #f1f1f1;
-  color:rgba(0, 0, 0, .5)
-  }
-
-  span {
-    font-family:'Rambla', sans-serif;
-    font-size: 50px;
-    font-weight:900;
-    background-color: #f1f1f1;
-    text-align: center;
-    color:rgb(100, 1, 1);
-    text-shadow: 0 0 0.2em #314652 ;
-  }
-
-
+@media (max-width: 650px){
   ul{
     display: none;
   }
