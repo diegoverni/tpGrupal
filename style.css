@@ -351,7 +351,7 @@ button {
   }
 
 
-@media (max-width: 651px){
+@media (max-width: 700px){
 
   h1 {
     background-color: #f1f1f1;
@@ -365,13 +365,26 @@ button {
     text-shadow: 0 0 0.2em #314652 ;
   }
 
+  .container {
+    background-color: #f1f1f1;
+    color: #314652;
+    font-family: 'Rambla', sans-serif; 
+    font-size: medium;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:initial;
+    align-items: center;
+    flex-direction: row
+   }
+
   ul{
     display: none;
   }
   
   input:checked  ~ ul{
     display:block;
-    
+    background: #f1f1f1;    
   }
   
   input {
@@ -382,8 +395,9 @@ button {
   label {
     box-sizing: border-box;
     display: inline-block;
-    border: 1px solid #f1f1f1;
-    background-color: #314652;
+    border: 1px solid #314652;
+    background-color: #f1f1f1;
+    color: #314652;
     border-radius: 5px;
     width: 30px;
     height: 30px;
@@ -395,34 +409,112 @@ button {
   
   /* Estilo del boton cuando se pasa el mouse por encima*/
   label:hover{
-    background: #f1f1f1;
-    color: #314652;
+    background: #314652;
+    border: solid 1px #314652;
+    color: #f1f1f1;
   }
   
   /* Estilo del boton cuando el menú está expandido*/
   input:checked ~ label {
-    background: rgb(100, 1, 1);
+    background: #314652;
+    color: #f1f1f1;
+  }
+
+  nav {
+    background-color: #f1f1f1;
+    width: 33%;
+    border: 1px;
+    padding: 1px;
+    }
+  
+  nav ul {
+      background-color: #f1f1f1;
+      border: 1px;
+      padding: 1px;
+      
+  }
+  
+  nav li {
+      background-color: #f1f1f1;
+      box-shadow: 2px 2px 31px #314652;
+      width: 200px;
+      border: 1px;
+      padding: 1px;
+  }
+  
+  nav li a {
+    font-family: 'Rambla', sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    background-color:#f1f1f1;
+    color: #314652;
+    border: 1px;
+    padding: 1px;
+  }
+
+  p{
+    background: #f1f1f1;
+    color: #314652;
   }
   
   ul{
     margin-top:0;
     padding: 0;
     width: 200px;
-  
+    border: 1px;
   }
   
-  
-  li {
-    display: block;
-    background:  #f1f1f1;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid  #f1f1f1
+
+
+  li a {
+    text-align:left;
+    width: 200px;
+    padding: 1px;
+    border: 1px;
   }
   
   /*Estilo cuando el mouse pasa encima de cada link del menu*/
   li:hover {
     filter: brightness(110%);
+    
   }
+
+  
+  
+  ul a:hover {
+    display: block;
+    color: #f1f1f1;
+    background-color: #314652;
+    transform: translateY(20%);
+  }
+
+  .span_2 {
+    font-family:'Rambla', sans-serif;
+    font-size: 25px;
+    font-weight:90;
+    background-color: #f1f1f1;
+    text-align: center;
+    color:rgb(100, 1, 1);
+    text-shadow: 0 0 0.2em #314652;
+  }
+  
+  .span_3 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 50;
+    background-color: #314652;
+    text-align: center;
+    color: #f1f1f1;
+    text-shadow: 0 0 0em #f1f1f1;
+  
+  }
+
+  footer {
+    background: #f1f1f1;
+    color: #314652;
+    line-height: 1.5;
+    padding: 5px;
+    height: max-content;
+   }
+
 }
