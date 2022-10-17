@@ -5,6 +5,28 @@
    
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(200px, auto);
+}
+.one {
+  grid-column: 1 / 7;
+  grid-row: 1;
+}
+
+.two {
+  grid-column: 6/7;
+  grid-row: 2 / 5;
+}
+
+.three {
+  grid-column: 6/7;
+  grid-row: 2 / 5;
+}
+
+
 h1 {
    font-size: 80px;
    font-weight: 70;
@@ -89,15 +111,18 @@ video:hover{
 
 nav {
   background-color: #314652;
+  
   }
 
 nav ul {
     background-color: #314652;
+    
 }
 
 nav li {
   background-color: #314652;
   box-shadow: 2px 2px 31px rgb(100, 1, 1);
+  margin-right: 30px;
 }
 
 nav a {
@@ -193,11 +218,13 @@ input[type="checkbox"] {
 button {
    color: #314652;;
    background-color:#314652;
+  
 }
 
 #navegador ul{
     list-style-type: none;
     text-align: center;
+    
  }
 
  #navegador li a {
@@ -207,6 +234,7 @@ button {
     border: 1px solid#314652;;
     text-decoration: none;
     border-radius: 5px;
+    
  }
 
  #navegador li a:hover{
@@ -338,20 +366,18 @@ button {
 
 @media (max-width: 2048px){
  
-  label{
+  #menu {
     display:none;
-
   }
-  
-  input {
+
+  nav label {
     display: none;
-    
-  }
-    
   }
 
 
-@media (max-width: 700px){
+@media (max-width: 700px)
+{ *{margin: 0;
+}
 
   h1 {
     background-color: #f1f1f1;
@@ -384,15 +410,28 @@ button {
   
   input:checked  ~ ul{
     display:block;
-    background: #f1f1f1;    
+    background: #f1f1f1; 
+       
   }
   
-  input {
+  #menu {
     display: none;
-    
+      }
+
+  #mascotas {
+    background-color: #314652;
+    justify-content: center;
+    margin: 0;
+    flex-wrap: nowrap;
   }
-  
-  label {
+
+  .container p {
+    background-color: #314652;
+    color: #f1f1f1;
+    margin: 0;
+  }
+    
+  nav label {
     box-sizing: border-box;
     display: inline-block;
     border: 1px solid #314652;
@@ -405,6 +444,7 @@ button {
     font-weight: bold;
     text-align: center;
     user-select: none;
+    
   }
   
   /* Estilo del boton cuando se pasa el mouse por encima*/
@@ -517,4 +557,4 @@ button {
     height: max-content;
    }
 
-}
+  }
