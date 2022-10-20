@@ -148,7 +148,6 @@ img {
 
 video {
   width: 100px;
-  height: ;
   margin: 0px;
   overflow: hidden;
   }
@@ -440,8 +439,8 @@ button {
   }
 
 
-@media (max-width: 700px)
-{ *{margin: 5px;
+@media (max-width: 700px){ 
+  *{ margin: 5px;
 }
 
   h1 {
@@ -495,12 +494,11 @@ button {
   input:checked  ~ ul{
     display:block;
     background: #f1f1f1; 
-       
   }
   
   #menu {
     display: none;
-      }
+    }
 
   #mascotas {
     background-color: #314652;
@@ -528,7 +526,6 @@ button {
     font-weight: bold;
     text-align: center;
     user-select: none;
-    
   }
   
   /* Estilo del boton cuando se pasa el mouse por encima*/
@@ -645,7 +642,3 @@ button {
     color: #314652;
     padding: 5px;
    }
-
-  video {
-  display: none;
-  }
