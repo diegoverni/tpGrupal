@@ -8,6 +8,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   grid-gap: 0px;
   grid-auto-rows: minmax(200px, auto);
 }
@@ -26,11 +27,16 @@
   grid-column: 5/6;
   grid-row: 2 / 6;
   background-color: #666;
+  margin-bottom: 36%;
 }
 
+.three p {
+  background-color: #666;
+  margin-bottom: 36%;
+}
 
 .four {
-  grid-column: 1/6;
+  grid-column: 1/5;
   grid-row: 5 / 5;
 }
 
@@ -633,7 +639,7 @@ button {
       background-color: #f1f1f1;
       color: #314652;
       display: flex;
-      margin-bottom: 20px;;
+      margin-bottom: 20px;
     }
 
   footer {
@@ -642,3 +648,12 @@ button {
     color: #314652;
     padding: 5px;
    }
+
+   .three {
+    grid-column: 5/6;
+    grid-row: 2 / 6;
+    background-color: #f1f1f1;
+    border: #666 solid 1px;
+    margin-bottom: 10px;
+  }
+}}
