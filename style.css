@@ -8,7 +8,8 @@
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 200px 200px 200px 200px 200px auto;
+  grid-template-rows: 200px 200px 200px 200px 200px 200pxo;
+  
 }
 
 .one {
@@ -18,7 +19,7 @@
 
 .two {
   grid-column: 1/5;
-  grid-row: 2 / 4;
+  grid-row: 2 / 5;
 }
 
 .three {
@@ -30,6 +31,38 @@
 .three p {
   background-color: #666;
 }
+
+#mega {
+  display: none;
+}
+
+.three video{
+  margin: 0px;
+  display: block;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  width: 100%;
+  height: 50%;
+}
+
+.three img {
+  margin: 0px;
+  display: block;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  width: 100%;
+  height: 25%;
+}
+
+.three a {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+}
+
 
 .four {
   grid-column: 1/6;
@@ -673,10 +706,29 @@ button {
     grid-row: 7 / 7;
     grid-column: 1 / 6;
     background-color: #666;
+    margin: 10px;
   }
   
   .three p {
     background-color: #666;
+    margin: 0px;
+  }
+
+  #mega {
+    display: block;
+  }
+
+  #sky {
+    display: none;
+  }
+
+  .three img{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
   }
   
 
