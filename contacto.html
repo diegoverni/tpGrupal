@@ -15,51 +15,58 @@
 <link rel="icon" href="img/uvas.ico">
 </head>
 
-    <header>
-        <h1> <span> FINCA </span> Los Racimos</h1>
-        <h2> San Rafael, Mendoza, Argentina</h2>
-    <div class="container">
-        <nav>
-            <input type="checkbox" id="menu">
-            <label for="menu"> ☰ </label>
-            <ul>
-                <li><a href="index.html">Nosotros</a></li>
-                <li><a href="cabanas.html">Cabañas</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="comollegar.html">Como Llegar</a></li>
-            </ul>      
-        </nav>
-    </div>
-    </header>
+<header>
+    <h1> <span> FINCA </span> Los Racimos</h1>
+    <h2> San Rafael, Mendoza, Argentina</h2>
+<div class="container" id="barra">
+    <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu"> ☰ </label>
+        <ul>
+            <li><a href="index.html">Nosotros</a></li>
+            <li><a href="cabanas.html">Cabañas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="comollegar.html">Como Llegar</a></li>
+        </ul>      
+    </nav>
+</div>
+</header>
 
 <body>
-
 <form action="https://formsubmit.co/diegoverni@yahoo.com.ar" method="POST">
-<input type="text" name="name" required placeholder="Nombre">
-<input type="email" name="email" required placeholder="E-mail">  
-<input type="text" name="Telefono" required placeholder="Teléfono">  
- Reserva
- Desde <input type="date" name="fecha">   Hasta<input type="date" name="fecha2">
- <div class="container" id="mascotas">
-    <p>Mascota</p>
-    <div class="mascota">
-      <input type="radio" id="mascotaChoice1" name="contact" value="email">
-      <label for="contactChoice1">Si</label>  
-      <input type="radio" id="mascotaChoice2" name="contact" value="phone">
-      <label for="contactChoice2">No</label>
-    </div>
- </div>
+    <input type="text" name="name" required placeholder="Nombre (*)">
+    <input type="text" name="telefono" id="telefono"  required placeholder="Teléfono (*)">  
+    <input type="email" id="mail" name="mail" required minlength="8" placeholder="E-mail (*)">
+    <span class="error" aria-live="polite"></span>
 
- <select name="Motivo">Motivo del viaje
- <option value="1">Turismo
- <option value="2">Trabajo
- <option value="3">Otros
- </select> 
- Comentarios
- <textarea name="comentarios"></textarea> 
- <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación. 
-<input type="reset" value="Borrar" ><input type="submit" value="Enviar">
+<div class="container" id="fechas">
+    <p>Reserva</p>
+    <label>Desde<input type="date" name="fechaDesde"></label>
+    <label>Hasta<input type="date" name="fechaHasta"></label>
+</div>
+
+<div class="container" id="mascota">
+    <p>Mascota</p>
+      <input type="radio" id="mascotaChoice1" name="mascotaSi"> 
+      <label for="contactChoice1">Si</label>  
+      <input type="radio" id="mascotaChoice2" name="mascotaNo">
+      <label for="contactChoice2">No</label>
+</div>
+
+<select name="Motivo">
+    <option disabled selected>Motivo del viajen</option>
+    <option value="1">Turismo
+    <option value="2">Trabajo
+    <option value="3">Otros
+</select> 
+
+    <textarea name="comentarios" placeholder="Dejanos tu comentario aquí."></textarea> 
+    <input type="checkbox" name="recibir_info" checked> Deseo recibir notificación. 
+    <input type="reset" value="Borrar" > 
+    <input type="submit" value="Enviar">
 </form>
+
+<script src="app.js"> </script>
 
 </body>
 
@@ -72,6 +79,6 @@
       <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
       <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
   </section>
-</div>
+
 </footer>
 </html>
